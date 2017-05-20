@@ -7,10 +7,10 @@ setup(
     name='trigram',
     description='Implements the trigram function.',
     version='0.1',
-    author=['JamesT', 'EricE'],
+    author=['JamesT', 'ErikE'],
     #author_email='',
     #license='',
-    py_modules=['ackermann'],
+    py_modules=['trigram'],
     #package_dir={'': 'src'}
     install_requires=dependencies,
     extra_require=extra_packages
