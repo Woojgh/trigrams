@@ -1,12 +1,10 @@
 from random import randint
-import io
 
 '''This sets the intro point for our function to start at.  We then open and split up our story that we want to have altered.
 This will also open up another file that we will write all our data to.'''
 
 source = open('source.txt').read().split()
 def main(source, number=100, intropoint='to sherlock'):
-	file = io.open('output.txt', 'w')
 	story = intropoint
 	source_dict = {}
 	for i in range(len(source)):
@@ -16,8 +14,7 @@ def main(source, number=100, intropoint='to sherlock'):
 
 
 		number-=1
-	file.write(story)
-	file.close()
+	print(story)
 
 '''This is a method that will parse through the words in our story.'''
 
